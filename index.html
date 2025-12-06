@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" type="image/png" href="https://i.postimg.cc/Dy1q6QRS/AA1Rq-W5Y-removebg-preview.png">
+<title>Marseaux</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+  --bg:#0b0b0b;
+  --text:#ffffff;
+  --muted:#b3b3b3;
+  --accent:#f3f3f3;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html{ scroll-behavior:smooth; }
+
+body{
+  background:var(--bg);
+  color:var(--text);
+}
+
+/* ================= HEADER ================= */
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 50px;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:900;
+  letter-spacing:-1px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:25px;
+  font-size:14px;
+  letter-spacing:1px;
+}
+
+nav a:hover{
+  color:#ddd;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  gap:50px;
+  padding:100px 50px;
+  align-items:center;
+}
+
+.hero h1{
+  font-size:96px;
+  font-weight:900;
+  letter-spacing:-3px;
+}
+
+.hero p{
+  max-width:500px;
+  color:var(--muted);
+  margin:15px 0 30px;
+}
+
+.hero-btns a{
+  display:inline-block;
+  padding:14px 28px;
+  background:white;
+  color:black;
+  border-radius:4px;
+  font-weight:700;
+  text-decoration:none;
+  margin-right:8px;
+}
+
+.hero-btns a.alt{
+  background:transparent;
+  border:1px solid gray;
+  color:white;
+}
+
+.hero img{
+  width:100%;
+  border-radius:10px;
+  box-shadow:0 0 60px rgba(0,0,0,0.7);
+}
+
+/* ================= MUSIC ================= */
+
+section{
+  padding:80px 50px;
+}
+
+.title{
+  font-size:30px;
+  font-weight:800;
+  margin-bottom:35px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:#101010;
+  border:1px solid #222;
+  border-radius:10px;
+  overflow:hidden;
+}
+
+.card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.card div{
+  padding:15px;
+}
+
+.card h4{
+  margin-bottom:6px;
+}
+
+.card p{
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* ================= LIVE ================= */
+
+.live{
+  background:#060606;
+}
+
+.show{
+  border:1px solid #222;
+  border-radius:8px;
+  padding:18px;
+  margin-bottom:15px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.show span{
+  color:var(--muted);
+}
+
+.show a{
+  color:white;
+  border:1px solid gray;
+  padding:7px 15px;
+  border-radius:4px;
+  text-decoration:none;
+  font-size:13px;
+}
+
+/* ================= GALLERY ================= */
+
+.gallery{
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+}
+
+.gallery img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  border-radius:8px;
+}
+
+/* ================= CONTACT ================= */
+
+footer{
+  background:#050505;
+  padding:60px 50px;
+}
+
+footer h4{
+  font-size:22px;
+  margin-bottom:10px;
+}
+
+/* ================= NEWSLETTER ================= */
+
+input{
+  background:#0b0b0b;
+  border:1px solid #333;
+  padding:12px;
+  color:white;
+  width:240px;
+}
+
+button{
+  background:white;
+  border:none;
+  padding:12px 20px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#ddd;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+  .hero{
+    grid-template-columns:1fr;
+    padding:60px 30px;
+  }
+
+  .hero h1{
+    font-size:64px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">MARSEAUX</div>
+  <nav>
+    <a href="#music">ΜΟΥΣΙΚΗ</a>
+    <a href="#live">LIVE</a>
+    <a href="#gallery">GALLERY</a>
+    <a href="#contact">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+  </nav>
+</header>
+
+
+<!-- HERO -->
+<div class="hero">
+  <div>
+    <h1>MARSEAUX</h1>
+    <p>Hip-hop & soul vibes από την Ελλάδα. Νέες κυκλοφορίες, live εμπειρίες και visuals.</p>
+
+    <div class="hero-btns">
+      <a href="#music">Ακούστε</a>
+      <a href="#live" class="alt">Live Dates</a>
+    </div>
+  </div>
+
+  <!-- άλλαξε path σε πραγματική φωτογραφία -->
+  <img src="https://i.postimg.cc/Dy1q6QRS/AA1Rq-W5Y-removebg-preview.png" alt="Marseaux">
+</div>
+
+
+<!-- MUSIC -->
+<section id="music">
+  <div class="title">Νέα Μουσική</div>
+
+  <div class="grid">
+    <div class="card">
+      <a href="https://www.youtube.com/watch?v=DHD80nm7gVM&list=RDDHD80nm7gVM&start_radio=1"><img src="https://tse2.mm.bing.net/th/id/OIP.3sFd9b6SqwnFNJtsu-WHXAHaHa?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"></a>
+      <div>
+        <h4>Marseaux | Τρέλανέ Μας (Trelane Mas)</h4>
+        <p>Τρέλανέ Μας (Trelane Mas)
+Marseaux
+<br>
+Producer
+DJ.Silence</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.ti2D1lkTZKMe6sjiTvvEGwHaHa?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3">
+      <div>
+        <h4>Marseaux - Witch</h4>
+        <p> H Popstar Marseaux παρουσιάζει το νέο albumcτης με τίτλo “WITCH”.Στην πολυτάραχη εκκίνηση της solo πορείας της η Marseaux έχει δει μόνο σπουδαία πλατινένια και χρυσά singles viral.. επιτυχίες, πρώτες θέσεις σε YouTube & Spotify Charts και δεκάδες χιλιάδες θαυμαστές στις συναυλίες της.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://i.ytimg.com/vi/jAhB3Fm48yI/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-DoACuAiKAgwIABABGBMgJyh_MA8=&rs=AOn4CLA0vk64D7g9iab8BI1bkmqRoH_ptw">
+      <div>
+        <h4>Live Session</h4>
+        <p>ΚΕΝΤΡΟ ΑΘΗΝΩΝ
+<br>
+Πειραιώς 142 & Πέτρου Ράλλ</p>
+<a href="https://www.glentzes.gr/kallitexnes/marseaux/"><p><b><ins>Καντε Κρατηση ΕΔΩ</ins></b></p></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- LIVE -->
+<section id="live" class="live">
+  <div class="title">Ερχόμενα Live</div>
+
+  <div class="show">
+    <div>
+      <strong></strong><br>
+      <span></span>
+    </div>
+    <a href="#">Εισιτήρια</a>
+  </div>
+
+  <div class="show">
+    <div>
+      <strong><br>
+      <span></span>
+    </div>
+    <a href="#">Εισιτήρια</a>
+  </div>
+</section>
+
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="title">Gallery</div>
+
+  <div class="grid gallery">
+    <img src="https://ontime24.gr/wp-content/uploads/2024/12/Marseaux.jpg?v=1734088032">
+    <img src="https://www.dnews.gr/media/k2/items/cache/2869fc3fde057b8edd8d17ad17255084_L.jpg">
+    <img src="https://www.news247.gr/wp-content/uploads/2025/11/Marseaux--og-image-3897070.jpg">
+    <img src="https://www.thestival.gr/wp-content/uploads/2025/02/marseux.jpg">
+<img src="https://tse1.explicit.bing.net/th/id/OIF.cttT1Bb4Esozu8gOSjNCKw?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3">
+<img src="https://tse4.mm.bing.net/th/id/OIP.ciCvhBfiwup-vEogj1AiUQHaHa?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3">
+<img src="https://www.zappit.gr/wp-content/uploads/2024/11/marseaux122-1200x678.jpg">
+
+  </div>
+</section>
+
+
+<center><!-- CONTACT -->
+<footer id="contact">
+  <h4>Επικοινωνία & Booking</h4>
+  <p>booking@marseaux.gr</p>
+  <br>
+
+  <h4>Newsletter</h4>
+  <input id="email" type="email" placeholder="Email σας">
+  <button onclick="subscribe()">Εγγραφή</button>
+
+  <p id="msg" style="margin-top:8px;color:#8cff8c;"></p>
+
+<!-- Elfsight Background Music | Untitled widget -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-0f937234-d0a9-49f8-a95b-2ae7104e80a3" data-elfsight-app-lazy></div>
+</footer>
+
+<script>
+function subscribe(){
+  const mail = document.getElementById('email').value;
+
+  if(mail.includes('@')){
+    document.getElementById('msg').textContent =
+      '✔️ Ευχαριστούμε για την εγγραφή!';
+    document.getElementById('email').value='';
+  } else {
+    alert('Βάλε έγκυρο email!');
+  }
+}
+
+</script>
+
+</body>
+</html>
